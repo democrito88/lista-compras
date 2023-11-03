@@ -41,11 +41,11 @@ export default function Produto({produto, atualizaObjeto, removeProduto}){
         <input className="input" type="text" value={produto?.nome} onInput={handleNome} placeholder="nome"/>
         <input className="input" type="number" value={produto?.preco} onInput={handlePreco} placeholder="preço"/>
         <div className="divQuantidade">
-            <button className="aumenta-quantidade" onClick={addQuantidade}>
+            <button className="botao-quantidade aumenta-quantidade" onClick={addQuantidade}>
                 <SlArrowUp/>
             </button>
             <input type="text" value={produto?.quantidade} onInput={handleQuantidade} placeholder="quantidade"/>    
-            <button className="diminui-quantidade" onClick={lessQuantidade}>
+            <button className="botao-quantidade diminui-quantidade" onClick={lessQuantidade}>
                 <SlArrowDown/>
             </button>
         </div>

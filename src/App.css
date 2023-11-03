@@ -1,5 +1,29 @@
+@font-face {
+  font-family: 'Hot Deals';
+  src: url('./fonts/HotDeals.otf') format('opentype'), url('./fonts/HotDeals.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --cor-primaria: #952323;
+  --cor-secundaria: #A73121;
+  --cor-terciaria: #DAD4B5;
+  --cor-botao-fechar: #FF0000;
+  --cor-fonte: #F2E8C6;
+  --fonte: 'Hot Deals', sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+  color: var(--cor-fonte);
+}
+
+
 .App {
   text-align: center;
+  background-color: var(--cor-primaria);
+  padding: 1em 0;
 }
 
 .App-logo {
@@ -21,7 +45,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--cor-secundaria);
 }
 
 .App-link {

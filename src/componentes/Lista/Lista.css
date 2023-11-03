@@ -1,25 +1,62 @@
 .lista{
-    border: 1px solid #ddd;
+    border: 3px solid var(--cor-terciaria);
     border-radius: 8px;
     padding: 1.5em;
-    background-color: #333;
+    background-color: var(--cor-primaria);
     position: relative;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
+    width: 37em;
+    margin: 0 auto;
 }
 
 .titulo{
-    color: #ddd;
+    color: var(--cor-terciaria);
     text-align: center;
     margin: 0.5em;
+    font-size: 3em;
+}
+
+.cabecalhos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.cabecalhos li:nth-child(1), li:nth-child(2){
+    margin: 0 6em 0 3em;
+}
+
+.cabecalhos li:nth-child(3){
+    display: inline-block;
+    margin: 0 3em 0 1em;
+}
+
+.cabecalhos:nth-child(n):last-child{
+    margin-right: 0;
 }
 
 .total{
-    color: #ddd;
+    color: var(--cor-terciaria);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1em 0.5em;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.adicionar{
+    margin: 0 auto;
+    padding: 8px 0 5px 0;
+    width: 85%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-size: large;
+    border-color: var(--cor-secundaria);
+    border-radius: 5px;
 }

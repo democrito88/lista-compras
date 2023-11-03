@@ -72,14 +72,20 @@ export default function Lista() {
 
     return (
         <div className="lista">
-            <h3 className="titulo">Lista de compras <PiShoppingCartBold /></h3>
+            <h1 className="titulo">Lista de compras <PiShoppingCartBold /></h1>
+            <ul className="cabecalhos">
+                <li>Nome</li>
+                <li>Preço (un.)</li>
+                <li>Qtde.</li>
+                <li></li>
+            </ul>
             {produtos.map(produto => <Produto produto={produto} atualizaObjeto={atualizaObjeto} removeProduto={removeProduto} />)}
-            <button onClick={addProduto}>
+            <button className="adicionar" onClick={addProduto}>
                 <SlPlus />
             </button>
             <div className="total">
                 <h5>Total:</h5>
-                <p>{Math.round(produtos.map(produto => produto.preco * produto.quantidade).reduce((a, b) => a + b) * 100)/100}</p>
+                <p>R${Math.round(produtos.map(produto => produto.preco * produto.quantidade).reduce((a, b) => a + b) * 100)/100}</p>
             </div>
         </div>
     )

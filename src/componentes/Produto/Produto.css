@@ -1,18 +1,21 @@
 .produto{
-    background-color: #333;
-    border: 1px #ddd solid;
+    background-color: var(--cor-primaria);
+    border: 1px var(--cor-terciaria) solid;
     border-radius: 5px;
     padding: 0.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0.3em 0;
+    margin: 0.3em auto;
 }
 
 .input{
     padding: 0.5em;
     border-radius: 5px;
+    border-color: var(--cor-terciaria);
+    margin:0.5em;
+    height: 50px;
 }
 
 .divQuantidade{
@@ -21,12 +24,18 @@
     width: 3em;
 
     button{
-        border: #ddd 1px solid;
+        border: var(--cor-terciaria) 1px solid;
 
         padding: 0.2em;
-        color: #ddd;
-        background-color: #333;
+        color: var(--cor-terciaria);
+        background-color: var(--cor-primaria);
     }
+}
+
+.botao-quantidade{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte);
+    border-color: var(--cor-secundaria);
 }
 
 .aumenta-quantidade{
@@ -38,10 +47,11 @@
 }
 
 .fechar{
-    background-color: red;
-    color: white;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-botao-fechar);
     border: none;
     border-radius: 2px;
     padding: 3px;
+    margin: 0.5em;
 }
 
