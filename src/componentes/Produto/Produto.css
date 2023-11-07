@@ -7,14 +7,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0.3em auto;
+    margin: 0.3em 0.5em;
 }
 
 .input{
-    padding: 0.5em;
     border-radius: 5px;
     border-color: var(--cor-terciaria);
-    margin:0.5em;
     height: 50px;
 }
 

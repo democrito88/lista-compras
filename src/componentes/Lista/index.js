@@ -59,7 +59,7 @@ export default function Lista() {
         const indice = novoArray.findIndex(produto => produto.id === novoProduto.id);
         
         if(indice !== -1){
-            novoArray[indice + 1] = {
+            novoArray[indice ] = {
                 id: novoProduto.id,
                 nome: novoProduto.nome,
                 preco: novoProduto.preco,

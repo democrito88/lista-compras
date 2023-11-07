@@ -1,14 +1,14 @@
 .lista{
     border: 3px solid var(--cor-terciaria);
     border-radius: 8px;
-    padding: 1.5em;
+    padding: 1em;
     background-color: var(--cor-primaria);
     position: relative;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
-    width: 37em;
+    width: min-content;
     margin: 0 auto;
 }
 
@@ -51,9 +51,9 @@
 }
 
 .adicionar{
-    margin: 0 auto;
+    margin: 0 0.5em;
     padding: 8px 0 5px 0;
-    width: 85%;
+    width: auto;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     font-size: large;

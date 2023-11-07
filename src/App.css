@@ -17,6 +17,7 @@
 body {
   font-family: var(--fonte);
   color: var(--cor-fonte);
+  height: 100%;
 }
 
 
